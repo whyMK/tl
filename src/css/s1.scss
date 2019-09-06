@@ -1,0 +1,20 @@
+.header .bot-header .top-nav li {
+    margin: 19px 2px 20px;
+}
+
+.header .top-header .header-tel {
+  padding: 5px 65px 7px 100px;
+}
+@media (max-width: 1600px) {
+  .header .top-header .header-tel {
+    padding: 5px 25px 7px 50px;
+  }
+}
+
+.header .top-header .header-tel a {
+  line-height: 1;
+}
+
+.service-bottom-wrapper .service-bottom-container .right-list {
+  margin-left: -5px;
+}
