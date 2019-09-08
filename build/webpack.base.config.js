@@ -42,6 +42,7 @@ module.exports = {
       test: /\.(png|jpg|gif|svg)$/,
       loader: 'file-loader',
       options: {
+        outputPath: `${PATHS.assets}images`,
         name: '[name].[ext]'
       }
     }, {
@@ -51,6 +52,7 @@ module.exports = {
         options: {
           limit: 10000,
           mimtetype: 'video/mp4',
+          outputPath: `${PATHS.assets}images`,
           name: '[name].[ext]'
        }
      }
@@ -58,6 +60,7 @@ module.exports = {
       test: /\.(woff(2)?|otf|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
       loader: 'file-loader',
       options: {
+        outputPath: `${PATHS.assets}fonts`,
         name: '[name].[ext]'
       }
     }, {
