@@ -7,7 +7,6 @@ class Menu extends React.Component {
       <div className="bot-header">
         <div className="header-btn open-nav"></div>
     		<div className="container">
-          <button className="open-modal open-nav" >Запись</button>
           <div className="logo-block">
             <a href="/">
     				  <img src={logo} alt="Top Laser" />

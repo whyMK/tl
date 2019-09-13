@@ -80,6 +80,10 @@ module.exports = {
         }
       ]
     }, {
+      type: 'javascript/auto',
+      test: /\.mjs$/,
+      use: []
+    }, {
       test: /\.css$/,
       use: [
         'style-loader',
@@ -98,7 +102,17 @@ module.exports = {
     }]
   },
   resolve: {
+    // alias: {
+    //   'sandwich-stream$': "sandwich-stream/dist/sandwich-stream.mjs"
+    // },
     extensions: ['*', '.js', '.jsx']
+  },
+  node: {
+    dgram: 'empty',
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty',
+    child_process: 'empty'
   },
   plugins: [
     new MiniCssExtractPlugin({

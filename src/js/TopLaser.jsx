@@ -11,24 +11,25 @@ import Footer from './Footer'
 import Actions from './Actions'
 import Abonements from './Abonements'
 import Contacts from './Contacts'
-import SignUp from './Signup'
+import Signup from './Signup'
+// import SendMessageToTelegramBot from './SendMessageToTelegramBot'
 
 // import '../application/stylesheets/modal.css'
 
-const Modal = ({ handleClose, show, children }) => {
-  const showHideClassName = show ? "modal display-block" : "modal display-none"
-
-  return (
-    <div>
-      <div className={showHideClassName}>
-        <div className="modal-callback">
-          <button className="close-modal" onClick={handleClose}>X</button>
-          {children}
-        </div>
-      </div>
-    </div>
-  )
-}
+// export const Modal = ({ handleClose, show, children }) => {
+//   const showHideClassName = show ? "modal display-block" : "modal display-none"
+//
+//   return (
+//     <div>
+//       <div className={showHideClassName}>
+//         <div className="modal-callback">
+//           <button className="close-modal" onClick={handleClose}>X</button>
+//           {children}
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
 
 const price_page =
   <div>
@@ -80,38 +81,28 @@ const price_page =
 
 class TopLaser extends React.Component {
 
-  state = { show: true };
-  showModal = () => {
-    console.log('setState true');
-    this.setState({ show: true})
-  };
-  hideModal = () => {
-    this.setState({ show: false})
-  };
-
   render () {
     return (
       <>
-      <div id="page-wrapper" className="page-wrapper home-page">
-        <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            {
-            // <Route exact path="/price" component={Price} />
-            }
-            <Route exact path="/price" render={() => price_page} />
-            <Route exact path="/actions" render={() => actions_page} />
-            <Route exact path="/abonements" render={() => abonements_page} />
-            <Route exact path="/contacts" render={() => contacts_page} />
-          </Switch>
-        </BrowserRouter>
-      </div>
+        <div id="page-wrapper" className="page-wrapper home-page">
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              {
+              // <Route exact path="/price" component={Price} />
+              }
+              <Route exact path="/price" render={() => price_page} />
+              <Route exact path="/actions" render={() => actions_page} />
+              <Route exact path="/abonements" render={() => abonements_page} />
+              <Route exact path="/contacts" render={() => contacts_page} />
+            </Switch>
+          </BrowserRouter>
+        </div>
 
-      <div>
-        <Modal show={this.state.show} handleClose={this.hideModal}>
-          <SignUp />
-        </Modal>
-      </div>
+        <div>
+          <Signup />
+        </div>
+
       </>
     );
   }

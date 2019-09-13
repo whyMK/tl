@@ -18,7 +18,9 @@ class Home extends React.Component {
       <div>
       	<header id="header" className="wrapper header">
           <Top />
-          <Banner />
+          {
+          // <Banner />
+          }
           <Menu />
         </header>
         <Fragment>

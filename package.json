@@ -20,6 +20,7 @@
     "autoprefixer": "^9.6.1",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",
     "css-mqpacker": "^7.0.0",
@@ -33,6 +34,7 @@
     "react-hot-loader": "^4.12.12",
     "react-router-dom": "^5.0.1",
     "sass-loader": "^8.0.0",
+    "stream": "0.0.2",
     "style-loader": "^1.0.0",
     "url-loader": "^2.1.0",
     "webpack": "^4.39.3",
@@ -41,11 +43,18 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "bootstrap": "^4.3.1",
+    "fs": "0.0.1-security",
+    "https-proxy-agent": "^2.2.2",
     "jquery": "^3.4.1",
+    "net": "^1.0.2",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
-    "react-player": "^1.12.0"
+    "react-player": "^1.12.0",
+    "reactjs-popup": "^1.5.0",
+    "telegraf": "^3.32.0",
+    "tls": "0.0.1"
   }
 }
