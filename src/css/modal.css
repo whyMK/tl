@@ -19,7 +19,6 @@ input, button {
   background-color: rgba(0, 0, 0, .5);
 }
 .modalWindow {
-  /* display: none; */
   background-color: #fff;
   border-style: solid;
   border-width: 1px;
@@ -37,25 +36,32 @@ input, button {
   color: #F781F3;
   border-color: #F781F3;
 }
-.modalWindow form {
+.modalBody form {
   padding: 15px;
   border: 1px solid #cad0d9;
+  /* border: 0; */
 }
-.modalWindow form input, .modalWindow form .form-modal__dropdown {
+/* .modalWindow form input, .modalWindow form .form-modal__dropdown {
   border: 1px solid #ccc;
   padding: 20px 0;
   border-bottom: 1px solid #ef9cc6;
   text-align: center;
-}
-.modalWindow form input {
+} */
+.modalBody form input {
   width: 100%;
+  border: 1px solid #ccc;
+  padding: 20px 0;
+  /* border-bottom: 1px solid #ef9cc6; */
+  text-align: center;
 }
 
 .modalWindow p, .modalWindow input, .modalWindow li, .modalWindow span {
   font-family: 'Montserrat', sans-serif!important;
 }
+
 .modalWindow .close-modal {
   cursor: pointer;
+  color: white;
   background-color: purple;
   width: 25px;
   height: 25px;
@@ -67,118 +73,103 @@ input, button {
   -ms-align-items: center;
   align-items: center;
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: -12px;
+  right: -12px;
 }
 
-.modalWindow form select {
+.modalBody .form-modal-select select {
   height: 60px;
   width: 100%;
-  border: 0;
-  border-bottom: 1px solid #ef9cc6;
+  /* border: 0; */
+  /* border: 1px solid #ef9cc6; */
+  border: 1px solid #ccc;
   display: block;
   margin: 0 auto 10px;
   text-align: center;
-  appearance: none;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 20px;
   color: #666c76;
-}
-
-.modalWindow form .form-modal__select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  /* -webkit-appearance: none;
+  -moz-appearance: none; */
   appearance: none;
   cursor: pointer;
   text-align-last: center;
-  text-align: center;
-  margin-bottom: 20px;
-  /* background: #ffffff url(../images/select.png) no-repeat 90% 50%; */
 }
 
-.modalWindow form .form-modal__dropdown {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-wrap: wrap;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.modalWindow form .form-modal__dropdown img {
-  margin-left: 10px;
-}
-.modalWindow form .form-modal__dropdown ul {
-  flex: 0 0 100%;
-  max-width: 100%;
-  background-color: #fff;
-  display: none;
-  padding-left: 0;
-}
-.modalWindow form .form-modal__dropdown ul li {
-  padding: 20px 0;
-  text-align: center;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  color: black;
-}
-.modalWindow form .form-modal__dropdown ul li:hover {
-  background-color: #E6E6E6;
+.modalWindow input[type="text"]:hover, .modalWindow select:hover {
+  border: 1px solid #ef9cc6;
 }
 
-.modalWindow form button {
+.modalBody button {
   margin-top: 15px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  width: 300px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* max-width: 100%; */
+  width: 320px;
   padding: 20px;
   text-align: center;
   background-color: purple;
   color: #fff;
 }
-.modalWindow form .checkbox {text-align: center;}
-.modalWindow form .checkbox input {
-  width: auto;
-}
+
 .modalWindow p {
   text-align: center;
 }
+
 @media (max-width: 576px) {
-  .modalWindow .close-modal {
-    top: -15px;
+  .modalWindow {
+    width: 350px;
+    top: -10px;
     left: 50%;
     transform: translateX(-50%);
   }
+  .modalHeader {
+    margin-top: 10px;
+    padding: 0;
+  }
+  .modalBody {
+    padding: 0;
+  }
+  .modalBody button {
+    width: 310px;
+  }
 }
 @media (max-width: 992px) {
-  .open-modal {
+  .modalWindow {
     display: block;
+    /* width: 95%; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2%;
+    margin-top: 5%;
     transition: 200ms ease;
+  }
+  .modalWindow .close-modal {
+    cursor: pointer;
+    color: white;
+    background-color: purple;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    position: absolute;
+    top: -3px;
+    right: -3px;
   }
 }
 @media (max-width: 350px) {
-  .open-modal {
+  .modalWindow {
     width: 100px;
     display: block;
     margin-left: 44%;
     margin-right: auto;
-    margin-top: 4%;
+    margin-top: 5%;
   }
-}
-.form-modal__text {
-  text-align: center;
-  padding: 5px;
-  color: white;
-  font-family: 'Montserrat', sans-serif!important;
-  margin: 0 10 10 10;
-  background: purple;
 }
 
 .modalOverlay {
@@ -225,10 +216,57 @@ input, button {
   align-items: center;
 }
 
-.modalFooter form .form-modal__item {
+.modalFooter .form-modal-item {
+  font-size: 14px;
+}
+
+.modalFooter input[type="checkbox"] {
+  width: auto;
+  margin: 10px 10px 10px 0;
+}
+
+.modalFooter form .form-modal-text {
+  text-align: center;
   padding: 5px;
+  color: white;
+  font-family: 'Montserrat', sans-serif!important;
+  margin: 0 10 10 10;
+  background: purple;
 }
 
 .modalFooter button:last-child {
   margin-left: 10px;
+}
+
+
+.modalWindow form .form-modal__dropdown {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.modalWindow form .form-modal__dropdown img {
+  margin-left: 10px;
+}
+.modalWindow form .form-modal__dropdown ul {
+  flex: 0 0 100%;
+  max-width: 100%;
+  background-color: #fff;
+  display: none;
+  padding-left: 0;
+}
+.modalWindow form .form-modal__dropdown ul li {
+  padding: 20px 0;
+  text-align: center;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  color: black;
+}
+.modalWindow form .form-modal__dropdown ul li:hover {
+  background-color: #E6E6E6;
 }

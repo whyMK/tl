@@ -11,11 +11,27 @@ function strDate(date) {
 
 class Signup extends React.Component {
   state = {
-    isOpen: true
+    isOpen: false
+  }
+  _isMounted = false;
+
+  // openModal = () => {
+  //   this.setState({ isOpen: true });
+  // }
+
+  openModal() {
+    setTimeout(() => {
+      this._isMounted = true;
+      this.setState({ isOpen: true })
+    }, 15000)
   }
 
-  openModal = () => {
-    this.setState({ isOpen: true });
+  componentDidMount() {
+    this.openModal();
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   handleSubmit = (data) => {

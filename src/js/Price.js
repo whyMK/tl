@@ -34,14 +34,15 @@ class Price extends React.Component {
       					<div className="right-block">
       						Цена, руб.
       					</div>
+                <div className="subtitle-block">
+                  Лазерная эпиляция
+                </div>
       				</div>
+
       				<div className="price-table">
       					<div className="price-wrap-table">
       						<table>
       							<tbody>
-      								<tr>
-                        <td colSpan="3"><span>Лазерная эпиляция</span></td>
-      								</tr>
       								<tr>
       									<td>Бикини глубокое</td>
       									<td>20</td>

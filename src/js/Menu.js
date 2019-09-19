@@ -1,26 +1,43 @@
-import React from 'react'
-import logo from '../images/logo.png'
+import React from 'react';
+// import DrawerToggleButton from './DrawerToggleButton';
+import Toolbar from './Toolbar';
+import SideDrawer from './SideDrawer';
+import Backdrop from './Backdrop';
+import logo from '../images/logo.png';
 
 class Menu extends React.Component {
+
+  state = {
+    sideDrawerOpen: false
+  }
+
+  drawerToggleClickHandler = () => {
+    this.setState(prevState => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+    });
+  }
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false });
+  }
+
   render () {
+    let backdrop
+    // let sideDrawer
+
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />
+      // sideDrawer = <SideDrawer />
+    }
+
     return (
       <div className="bot-header">
-        <div className="header-btn open-nav"></div>
-    		<div className="container">
-          <div className="logo-block">
-            <a href="/">
-    				  <img src={logo} alt="Top Laser" />
-            </a>
-    			</div>
-    			<div className="top-nav">
-            <ul>
-              <li><a href="/price">Цены</a></li>
-              <li><a href="/actions">Акции</a></li>
-              <li><a href="/abonements">Абонементы</a></li>
-              <li><a href="/contacts">Контакты</a></li>
-            </ul>
-    			</div>
-    		</div>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen} />
+        {
+          // {sideDrawer}
+        }
+        {backdrop}
       </div>
     )
   }

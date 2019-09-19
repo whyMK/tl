@@ -5,15 +5,15 @@ import selectImage from '../images/select.png'
 const ModalForm = () => {
 
   return (
-    <form className="form-modal" name="SignForm">
-      <div className="form-modal__item">
+    <form name="SignForm">
+      <div className="form-modal-item">
         <input type="text" placeholder="Ваше имя" name="name" id="name"/>
       </div>
-      <div className="form-modal__item">
-        <input type="tel" placeholder="Ваш телефон" name="phone" id="tel"/>
+      <div className="form-modal-item">
+        <input type="text" placeholder="Ваш телефон" name="phone" id="tel"/>
       </div>
-      <div className="form-modal__select">
-				<select name="city">
+      <div className="form-modal-select">
+				<select name="city" className="select">
 					<option disabled="" select="">Выберите город</option>
 					<option value="Томск">Томск</option>
 					<option value="Барнаул">Барнаул</option>

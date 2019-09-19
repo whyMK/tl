@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import { HashRouter } from 'react-router-dom'
 
 import './css/application.scss'
+import './css/media.scss'
+import './css/media_bootstrap.scss'
 import './css/main.css'
 import './css/jquery.fancybox.scss'
 import './css/modal.css'
