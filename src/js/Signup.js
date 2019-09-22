@@ -36,7 +36,7 @@ class Signup extends React.Component {
 
   handleSubmit = (data) => {
     var date = new Date;
-
+    // alert(data);
     var chatGroupId = '-385656981';  // Id группы
     var chatBotId = '160347291';  // Id бота
     var bot = new Telegram(chatGroupId);

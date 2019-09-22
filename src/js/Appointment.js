@@ -26,7 +26,7 @@ const Appointment = ({ func }) => {
   				  <div className="banner-form">
   				    <img className="girl-form" src={sectionImg} />
 					    <div className="banner-form-container">
-                <form name="SignForm">
+                <form name="AppForm">
                   <input type="text" placeholder="Имя" name="name" />
 						      <input type="text" placeholder="Телефон" name="phone" />
     							<div className="select-container">
@@ -38,8 +38,10 @@ const Appointment = ({ func }) => {
     								</select>
     							</div>
     							<label>
-                    <input id="submit-banner" type="submit" value="Записаться" onSubmit={(data) => func([SignForm.name.value, SignForm.phone.value, SignForm.city.value])} />
-                    <button onClick={(data) => func([SignForm.name.value, SignForm.phone.value, SignForm.city.value])}>Записаться</button>
+                    {
+                      // <input id="submit-banner" type="submit" value="Записаться" onSubmit={(data) => func([AppForm.name.value, AppForm.phone.value, AppForm.city.value])} />
+                    }
+                    <button id="submit-banner" onClick={(data) => func([AppForm.name.value, AppForm.phone.value, AppForm.city.value])}>Записаться</button>  
     							</label>
                   {
                     // <div className="submit-banner-button">
