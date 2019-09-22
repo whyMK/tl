@@ -921,6 +921,7 @@ button::-moz-focus-inner {
 html {
   height: 100%;
 }
+
 .no-flexbox body {
   min-height: 100%;
   height: 100%;
@@ -937,6 +938,7 @@ html {
 .no-flexbox .footer {
   width: auto;
 }
+
 .page-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -944,10 +946,12 @@ html {
       flex-direction: column;
   min-height: 100vh;
 }
-.lte-ie-11 .page-wrapper,
-.lt-ie-11 .page-wrapper {
-  min-height: 0;
-}
+
+// .lte-ie-11 .page-wrapper,
+// .lt-ie-11 .page-wrapper {
+//   min-height: 0;
+// }
+
 .no-flexbox .page-wrapper {
   display: block !important;
   width: auto;
@@ -1271,6 +1275,7 @@ html {
 
 .page-wrapper {
   background: url(../images/brickwall.png) repeat;
+  height: 100%;
   width: 100%;
 }
 .services-main-wrapper {
@@ -2200,10 +2205,21 @@ html {
 // }
 
 /////////////////////////// top-header
+
+.top-header-menu {
+  // position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: none;
+}
+
 .header .top-header {
   background: #512467;
   position: relative;
-  z-index: 99;
+  z-index: 200;
 }
 
 .header .top-header .social-icon {
@@ -2340,6 +2356,7 @@ html {
 .header .header-slider {
   display: none;
 }
+
 .header .bot-header {
   background: #ffffff;
   position: relative;
@@ -2435,6 +2452,10 @@ html {
 // .header .bot-header-scroll .sub-nav-open {
 //   text-align: left;
 // }
+
+.fixed-nav {
+  position: fixed;
+}
 
 .home-page .header-slider {
   height: 870px;
@@ -2983,15 +3004,15 @@ html {
 }
 
 .home-page .top-header .header-info .inf-header {
-    flex-basis: 250px;
+  flex-basis: 250px;
 }
-
-.metro-list {
-    width: 550px;
-}
-.metro-list li {
-    margin: 0 15px;
-}
+//
+// .metro-list {
+//     width: 550px;
+// }
+// .metro-list li {
+//     margin: 0 15px;
+// }
 
 /* Our Works */
 // .works-block_body .tab-links {

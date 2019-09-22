@@ -1,25 +1,28 @@
-import React from 'react'
+import React from 'react';
+import Drawer from "@material-ui/core/Drawer";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 
 import '../css/side_drawer.css'
 
 const SideDrawer = props => {
-  let drawerClasses = 'side-drawer'
-  if (props.show) {
-    drawerClasses = 'side-drawer open'
-  }
-  // <nav className="side-drawer">
-
   return (
-    <nav className={drawerClasses}>
-      <ul>
-        <li><a href="/">Домой</a></li>
-        <li><a href="/price">Цены</a></li>
-        <li><a href="/actions">Акции</a></li>
-        <li><a href="/abonements">Абонементы</a></li>
-        <li><a href="/contacts">Контакты</a></li>
-      </ul>
-    </nav>
-  )
-}
+    <Drawer
+      anhor = "right"
+      open = {props.open}
+      onClose = {() => props.onClose(false)}
+      >
+      <nav className="side-drawer">
+        <ul>
+          <li><a href="/">Домой</a></li>
+          <li><a href="/price">Цены</a></li>
+          <li><a href="/actions">Акции</a></li>
+          <li><a href="/abonements">Абонементы</a></li>
+          <li><a href="/contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </Drawer>
+  );
+};
 
-export default SideDrawer
+export default SideDrawer;

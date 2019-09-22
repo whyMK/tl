@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Home from './Home'
 import Menu from './Menu'
+// import MobileMenu from './MobileMenu'
+import Header from './Header'
 import Price from './Price'
 import Top from './Top'
 import Footer from './Footer'
@@ -84,8 +86,11 @@ class TopLaser extends React.Component {
 
   render () {
     return (
-      <>
-        <div id="page-wrapper" className="page-wrapper home-page">
+      <div className="App" style={{ height: "2000px" }}>
+        <div className="top-header-menu">
+          <Header />
+        </div>
+        <div className="page-wrapper home-page">
           <BrowserRouter>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -104,7 +109,7 @@ class TopLaser extends React.Component {
           <Signup />
         </div>
 
-      </>
+      </div>
     );
   }
 }

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import Top from './Top'
 import Banner from './Banner'
+import MobileMenu from './MobileMenu'
 import Menu from './Menu'
 import Promo from './Promo'
 import Price from './Price'
@@ -30,13 +31,15 @@ class Home extends React.Component {
 
   render () {
     return (
-      <div>
-      	<header id="header" className="wrapper header">
-          <Top />
-          {
-          // <Banner />
-          }
-          <Menu />
+      <div>      
+      	<header id="header">
+          <div className="wrapper header">
+            <Top />
+            {
+            // <Banner />
+            }
+            <Menu />
+          </div>
         </header>
         <Fragment>
           <Promo />

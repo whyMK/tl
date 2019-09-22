@@ -1,13 +1,15 @@
 import React from 'react';
-import DrawerToggleButton from './DrawerToggleButton';
+// import DrawerToggleButton from './DrawerToggleButton';
 import logo from '../images/logo.png';
 
 const Toolbar = props => (
 
   <nav className="menu-navigation">
-    <div className="drawer-toggle-button">
-      <DrawerToggleButton click={props.drawerClickHandler}/>
-    </div>
+    {
+      // <div className="drawer-toggle-button">
+      //   <DrawerToggleButton click={props.drawerClickHandler}/>
+      // </div>
+    }
     <div className="logo-block">
       <a href="/"><img src={logo} alt="Top Laser" /></a>
 		</div>
