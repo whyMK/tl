@@ -67,9 +67,9 @@ class TopLaser extends React.Component {
   render () {
     return (
       <div>
-        <div className="top-header-menu">
+        <header className="top-header-menu">
           <Header />
-        </div>
+        </header>
         <div>
           <BrowserRouter>
             <Switch>
