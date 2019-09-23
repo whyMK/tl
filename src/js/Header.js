@@ -22,18 +22,12 @@ const Header = () => {
   return (
     <AppBar
       style={{
-        background: headerShow ? "transparent" : "#090050",
+        background: headerShow ? "lightgray" : "white",
         color: "#000000",
         padding: "5px 0px"
       }}
     >
       <Toolbar>
-        {
-        // <div className="header_logo">
-        //   <div className="font_left header_logo_title">wmg</div>
-        //   <div className="font_left header_logo_caption">React mitting</div>
-        // </div>
-        }
         <IconButton aria-label="Menu" color="inherit" onClick={() => toggleDrawer(true)}>
           <MenuIcon />
         </IconButton>

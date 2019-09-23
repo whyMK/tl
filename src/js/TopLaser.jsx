@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Home from './Home'
 import Menu from './Menu'
-// import MobileMenu from './MobileMenu'
 import Header from './Header'
 import Price from './Price'
 import Top from './Top'
@@ -14,25 +13,6 @@ import Actions from './Actions'
 import Abonements from './Abonements'
 import Contacts from './Contacts'
 import Signup from './Signup'
-
-// import SendMessageToTelegramBot from './SendMessageToTelegramBot'
-
-// import '../application/stylesheets/modal.css'
-
-// export const Modal = ({ handleClose, show, children }) => {
-//   const showHideClassName = show ? "modal display-block" : "modal display-none"
-//
-//   return (
-//     <div>
-//       <div className={showHideClassName}>
-//         <div className="modal-callback">
-//           <button className="close-modal" onClick={handleClose}>X</button>
-//           {children}
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }
 
 const price_page =
   <div>
@@ -86,11 +66,11 @@ class TopLaser extends React.Component {
 
   render () {
     return (
-      <div className="App" style={{ height: "2000px" }}>
+      <div>
         <div className="top-header-menu">
           <Header />
         </div>
-        <div className="page-wrapper home-page">
+        <div>
           <BrowserRouter>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -104,11 +84,9 @@ class TopLaser extends React.Component {
             </Switch>
           </BrowserRouter>
         </div>
-
         <div>
           <Signup />
         </div>
-
       </div>
     );
   }
