@@ -14,6 +14,9 @@ import Abonements from './Abonements'
 import Contacts from './Contacts'
 import Signup from './Signup'
 import Appointment from './Appointment'
+import PriceWoman from './PriceWoman'
+import PriceSet from './PriceSet'
+import PriceMen from './PriceMen'
 
 
 const price_page =
@@ -23,7 +26,11 @@ const price_page =
       <Menu />
     </header>
     <Fragment>
-      <Price />
+      <PriceWoman />
+      <Appointment />
+      <PriceSet />
+      <Appointment />
+      <PriceMen />
       <Appointment />
     </Fragment>
   </div>

@@ -1,0 +1,67 @@
+import React from 'react'
+import sectionImg from '../images/iblock/451/table_header.png'
+
+class Price extends React.Component {
+  render () {
+    return (
+      <section className="service-price-wrapper wrapper">
+      	<div className="container">
+      		<div className="title-wrapper">
+      			<div className="title-wrapper__inner">
+      				<div className="title-wrapper__header">
+      					<span>
+      						<img src={sectionImg} alt="Прайсы" />
+      					</span>
+      				</div>
+      				<div className="title-wrapper__title">
+      					 Set'ы
+              </div>
+      				<div className="title-wrapper__footer">
+      					<span>Набором дешевле!</span>
+      				</div>
+      			</div>
+      		</div>
+      		<div className="service-price test4">
+      			<div className="price-wrap">
+      				<div className="price-table">
+      					<div className="price-wrap-table">
+      						<table>
+      							<tbody>
+      								<tr>
+      									<td>Set 1</td>
+      									<td>подмышки<br/>+<br/>бикини</td>
+      									<td>1400₽</td>
+      								</tr>
+      								<tr>
+      									<td>Set 2</td>
+      									<td>подмышки<br/>+<br/>бикини<br/>+<br/>голени</td>
+      									<td>2500₽</td>
+      								</tr>
+      								<tr>
+      									<td>Set 2+</td>
+      									<td>подмышки<br/>+<br/>бикини<br/>+<br/>голени<br/>+<br/>1/2 бедра</td>
+      									<td>3500₽</td>
+      								</tr>
+      								<tr>
+      									<td>Set 3</td>
+      									<td>подмышки<br/>+<br/>бикини<br/>+<br/> голени<br/>+<br/>бёдра<br/>+<br/>дорожка на животе<br/>+<br/> 2 зоны на лице</td>
+      									<td>4500₽</td>
+      								</tr>
+      								<tr>
+      									<td>Set 4</td>
+      									<td>подмышки<br/>+<br/>бикини<br/>+<br/>голени<br/>+<br/>бёдра<br/>+<br/>руки<br/>+<br/>дорожка на животе<br/>+<br/>2 зоны на лице</td>
+      									<td>5500₽</td>
+      								</tr>
+      							</tbody>
+      						</table>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      </section>
+    )
+  }
+}
+
+export default Price
