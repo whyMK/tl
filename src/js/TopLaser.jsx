@@ -13,6 +13,8 @@ import Actions from './Actions'
 import Abonements from './Abonements'
 import Contacts from './Contacts'
 import Signup from './Signup'
+import Appointment from './Appointment'
+
 
 const price_page =
   <div>
@@ -22,7 +24,7 @@ const price_page =
     </header>
     <Fragment>
       <Price />
-      <Footer />
+      <Appointment />
     </Fragment>
   </div>
 

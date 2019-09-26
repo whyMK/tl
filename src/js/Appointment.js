@@ -12,10 +12,10 @@ const Appointment = ({ func }) => {
   			  <div className="col-xs-12 col-md-6">
             <div className="text-banner">
               <div className="title-banner">
-                Оставь заявку и получи скидку 10%
+                Оставь заявку и получи скидку 15%
               </div>
               <div className="title-banner__item">
-                Скидка действует только на Томск и на Барнаул
+                Скидка действует только на Томск и Кемерово
                 </div>
               {
                 // <p style={textStyle}><em>* Скидка действует только на Томск и на Барнаул</em></p>
@@ -41,7 +41,7 @@ const Appointment = ({ func }) => {
                     {
                       // <input id="submit-banner" type="submit" value="Записаться" onSubmit={(data) => func([AppForm.name.value, AppForm.phone.value, AppForm.city.value])} />
                     }
-                    <button id="submit-banner" onClick={(data) => func([AppForm.name.value, AppForm.phone.value, AppForm.city.value])}>Записаться</button>  
+                    <button id="submit-banner" onClick={(data) => func([AppForm.name.value, AppForm.phone.value, AppForm.city.value])}>Записаться</button>
     							</label>
                   {
                     // <div className="submit-banner-button">

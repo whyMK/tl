@@ -12,7 +12,7 @@
   .wrapper {
     position: relative;
     height: 100%;
-    margin-top: 65px;
+    //margin-top: 65px;
     width: 100%;
   }
 }
@@ -282,6 +282,18 @@
     text-align: center;
   }
 }
+@media (max-width: 320px){
+  .banner-wrapper .text-banner .title-banner{
+    padding-left: 64px;
+  }
+}
+@media (max-width: 320px){
+  .banner-wrapper .text-banner .title-banner__item{
+    font-size: 7pt;
+    margin-left: -23px;
+  }
+}
+
 
 @media (max-width: 1200px) and (min-width: 950px) {
   .banner-wrapper .text-banner .title-banner {
@@ -292,6 +304,8 @@
   .banner-wrapper .text-banner .title-banner {
     font-size: 34px;
     line-height: 42px;
+    //padding-left: 157px;
+    padding-left: 124px;
   }
 }
 @media (max-width: 600px) {
@@ -913,11 +927,13 @@
   }
 }
 .service-price-wrapper .service-price .title-table .left-block {
-  width: 73%;
+  width: 61%
+  //width: 73%;
 }
 @media (max-width: 992px) {
   .service-price-wrapper .service-price .title-table .left-block {
     width: 50%;
+    //margin-left:30px;
   }
 }
 
@@ -1313,7 +1329,7 @@
 }
 @media (max-width: 1320px) {
   .header .top-header .social-icon li:last-child {
-    margin: 0;
+    margin: 0 10px 15px;
   }
 }
 
@@ -1438,7 +1454,7 @@
     width: 15%;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 692px) {
   .header .bot-header .logo-block {
     display: none;
     // margin-top: -30px;
@@ -1472,7 +1488,7 @@
 //   }
 // }
 
-@media (max-width: 992px) {
+@media (max-width: 501px) {
   .header .bot-header .top-nav {
     display: none;
     width: 100%;
@@ -2211,7 +2227,7 @@
   }
 
   .banner-wrapper .text-banner {
-    // padding-left: 55px;
+     padding-left: 55px;
   }
 
   .banner-wrapper .text-banner {
@@ -2220,13 +2236,15 @@
 
   .banner-wrapper .text-banner .title-banner {
     font-size: 15px;
-    padding-left: 110px;
+    padding-left: 120px;
+    //padding-left: 65px;
   }
 
   .banner-wrapper .text-banner .title-banner__item {
     font-size: 10pt;
     height: auto;
     width: 200px;
+    margin-left: -4px;
     margin-left: 90px;
     text-align: right;
   }
@@ -2266,7 +2284,8 @@
     font-size: 14px;
   }
   .price-wrap .title-table .left-block {
-    padding-left: 15px;
+    //padding-left: 15px;
+    padding-left: 50px;
   }
 
   .service-price-wrapper .service-price .title-table .left-block {

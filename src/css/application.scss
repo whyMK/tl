@@ -410,7 +410,7 @@ a:after {
   color: #666c76;
 }
 .text-block p {
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 .banner-wrapper {
   height: 480px;
@@ -678,14 +678,15 @@ a:after {
   padding: 18px 0 18px 30px;
 }
 .price-wrap .title-table .left-block {
-  padding-left: 30px;
+  padding-left: 70px;
 }
 .price-wrap .title-table .right-block {
   text-align: center;
 }
 .price-wrap .price-table {
   position: relative;
-  padding-bottom: 30px;
+//  padding-bottom: 0 30px 50px 30px;
+  padding: 0 30px 50px 30px;
 }
 
 .price-wrap .price-table:before {
@@ -1706,7 +1707,8 @@ html {
 }
 
 .service-price-wrapper {
-  padding: 40px 0 85px;
+  //padding: 0px 0 85px;
+  padding: 0px 0 160px;
 }
 .service-price-wrapper .price-table:before {
   top: 0;
@@ -1719,9 +1721,11 @@ html {
 .service-price-wrapper .service-price .title-table .right-block {
   display: inline-block;
   margin-left: -0.25em;
+  //margin-left: -1.25em;
 }
 .service-price-wrapper .service-price .title-table .center-block {
-  width: 15%;
+  //width: 15%;
+  width: 24%
 }
 
 .service-price-wrapper .service-price .title-table .right-block {
@@ -1729,7 +1733,7 @@ html {
   padding: 0;
 }
 .service-about-wrapper {
-  padding: 75px 0 0px;
+  //padding: 75px 0 0px;
 }
 
 .service-about-wrapper .title-wrapper__footer {

@@ -9,6 +9,7 @@ import Promo from './Promo'
 import Price from './Price'
 import Appointment from './Appointment'
 import Announcement from './Announcement'
+import Announcement2 from './Announcement2'
 import Footer from './Footer'
 import Telegram from './TelegramBot'
 
@@ -45,7 +46,10 @@ class Home extends React.Component {
           <Price />
           <Appointment func={this.handleSubmit} />
           <Announcement />
-          <Footer />
+          <Appointment func={this.handleSubmit} />
+          <Announcement2 />
+          <Appointment func={this.handleSubmit} />
+
         </Fragment>
       </div>
     )

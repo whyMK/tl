@@ -14,10 +14,10 @@ class Price extends React.Component {
       					</span>
       				</div>
       				<div className="title-wrapper__title">
-      					Прайсы
+      					Прайс
               </div>
       				<div className="title-wrapper__footer">
-      					<span>Стоимость услуги</span>
+      					<span>Популярные зоны</span>
       				</div>
       			</div>
       		</div>
@@ -26,7 +26,7 @@ class Price extends React.Component {
       			<div className="price-wrap">
       				<div className="title-table">
       					<div className="left-block">
-      						Название процедуры
+      						Зона
       					</div>
       					<div className="center-block">
       						Длительность, мин.
@@ -35,7 +35,7 @@ class Price extends React.Component {
       						Цена, руб.
       					</div>
                 <div className="subtitle-block">
-                  Лазерная эпиляция
+
                 </div>
       				</div>
 

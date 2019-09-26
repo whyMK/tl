@@ -14,6 +14,9 @@ class Top extends React.Component {
             <li>
               <a href="https://vk.com/epilation_toplaser" rel="nofollow"><i className="mdi mdi-vk"></i></a>
             </li>
+            <li>
+              <a href="https://www.instagram.com/toplaser_kemerovo/" rel="nofollow"><i className="mdi mdi-instagram"></i></a>
+            </li>
           </ul>
         </div>
     		<div className="header-info">
@@ -22,7 +25,7 @@ class Top extends React.Component {
     					9:00 - 21:00
             </div>
     				<div className="inf-header infh-address">
-    					Томск, Барнаул
+    					Томск, Барнаул, Кемерово
             </div>
     			</div>
     		</div>

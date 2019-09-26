@@ -53,7 +53,7 @@ class Signup extends React.Component {
     return (
       <Fragment>
         <Modal
-          title="Оставь заявку сейчас и получи скидку 10%"
+          title="Оставь заявку сейчас и получи скидку 15%"
           func={this.handleSubmit}
           isOpen={this.state.isOpen}
           onCancel={this.handleCancel}
