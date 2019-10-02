@@ -17,6 +17,7 @@ import Appointment from './Appointment'
 import PriceWoman from './PriceWoman'
 import PriceSet from './PriceSet'
 import PriceMen from './PriceMen'
+import SocialLink from './SocialLink'
 
 
 const price_page =
@@ -32,6 +33,7 @@ const price_page =
       <Appointment />
       <PriceMen />
       <Appointment />
+      <Footer />
     </Fragment>
   </div>
 
@@ -67,6 +69,7 @@ const price_page =
     </header>
     <Fragment>
       <Contacts />
+      <SocialLink />
       <Footer />
     </Fragment>
   </div>

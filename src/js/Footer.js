@@ -13,10 +13,16 @@ class Footer extends React.Component {
             <div className="social-icon">
       				<ul>
                 <li><a href="https://www.instagram.com/toplaser_tomsk/" rel="nofollow"><i className="mdi mdi-instagram"></i></a>
-                  <p>Toplaser Томск </p>
+                  <p>Томск</p>
+                </li>
+                <li><a href="https://www.instagram.com/toplaser_kemerovo/" rel="nofollow"><i className="mdi mdi-instagram"></i></a>
+                  <p>Кемерово</p>
+                </li>
+                <li><a href="https://www.instagram.com/toplaser_kemerovo/" rel="nofollow"><i className="mdi mdi-instagram"></i></a>
+                  <p>Барнаул</p>
                 </li>
                 <li> <a href="https://vk.com/epilation_toplaser" rel="nofollow"><i className="mdi mdi-vk"></i></a>
-                  <p>Toplaser Барнаул</p>
+                  <p>ВК</p>
                 </li>
               </ul>
             </div>
@@ -38,19 +44,14 @@ class Footer extends React.Component {
             <div className="title-footer">
               Контакты
             </div>
-            <div className="contact-left">
-              <ul>
-                <li className="footer-address">
-                  <span>Томск - пр. Комсомольский 15а, ТЦ «Остров», оф.403</span>
-                </li>
-                <li className="footer-address">  <span>Барнаул - Красноармейский проспект, 72 оф.918</span>
-                </li>
-              </ul>
-            </div>
+
             <div className="contact-right">
               <ul>
                 <li className="footer-tel">
                   <a href="tel:+79832300938">+7-(983)-230-09-38</a>
+                </li>
+                <li className="footer-tel">
+                  <a href="tel:+79966360896">+7-(996)-636-08-96</a>
                 </li>
                 <li className="footer-time">
     						  <span>ПН-ВС&nbsp; &nbsp; 9:00 - 21:00</span>

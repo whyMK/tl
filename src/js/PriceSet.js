@@ -21,35 +21,35 @@ class Price extends React.Component {
       				</div>
       			</div>
       		</div>
-      		<div className="service-price test4">
+      		<div className="service-price">
       			<div className="price-wrap">
       				<div className="price-table">
       					<div className="price-wrap-table">
-      						<table>
+      						<table className="table-set">
       							<tbody>
       								<tr>
       									<td>Set 1</td>
-      									<td>подмышки<br/>+<br/>бикини</td>
+      									<td>подмышки<br/>бикини</td>
       									<td>1400₽</td>
       								</tr>
       								<tr>
       									<td>Set 2</td>
-      									<td>подмышки<br/>+<br/>бикини<br/>+<br/>голени</td>
+      									<td>подмышки<br/>бикини<br/>голени</td>
       									<td>2500₽</td>
       								</tr>
       								<tr>
       									<td>Set 2+</td>
-      									<td>подмышки<br/>+<br/>бикини<br/>+<br/>голени<br/>+<br/>1/2 бедра</td>
+      									<td>подмышки<br/>бикини<br/>голени<br/>1/2 бедра</td>
       									<td>3500₽</td>
       								</tr>
       								<tr>
       									<td>Set 3</td>
-      									<td>подмышки<br/>+<br/>бикини<br/>+<br/> голени<br/>+<br/>бёдра<br/>+<br/>дорожка на животе<br/>+<br/> 2 зоны на лице</td>
+      									<td>подмышки<br/>бикини<br/> голени<br/>бёдра<br/>дорожка на животе<br/> 2 зоны на лице</td>
       									<td>4500₽</td>
       								</tr>
       								<tr>
       									<td>Set 4</td>
-      									<td>подмышки<br/>+<br/>бикини<br/>+<br/>голени<br/>+<br/>бёдра<br/>+<br/>руки<br/>+<br/>дорожка на животе<br/>+<br/>2 зоны на лице</td>
+      									<td>подмышки<br/>бикини<br/>голени<br/>бёдра<br/>руки<br/>дорожка на животе<br/>2 зоны на лице</td>
       									<td>5500₽</td>
       								</tr>
       							</tbody>

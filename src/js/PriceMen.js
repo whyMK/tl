@@ -29,7 +29,7 @@ class PriceMen extends React.Component {
       						<table>
       							<tbody>
       								<tr>
-      									<td>Бикини классическое</td>
+      									<td>Бикини классика</td>
       									<td></td>
       									<td>1000₽</td>
       								</tr>

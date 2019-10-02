@@ -12,6 +12,7 @@ import Announcement from './Announcement'
 import Announcement2 from './Announcement2'
 import Footer from './Footer'
 import Telegram from './TelegramBot'
+import SocialLink from './SocialLink'
 
   function dateToString(date) {
     var strDate = ('0' + date.getDate()).slice(-2) + '.' + ('0' + (date.getMonth() + 1)).slice(-2) + '.' + date.getFullYear() + ' ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
@@ -45,11 +46,13 @@ class Home extends React.Component {
           <Promo />
           <Price />
           <Appointment func={this.handleSubmit} />
+          <SocialLink />
           <Announcement />
           <Appointment func={this.handleSubmit} />
+          <SocialLink />
           <Announcement2 />
           <Appointment func={this.handleSubmit} />
-
+          <Footer />
         </Fragment>
       </div>
     )
