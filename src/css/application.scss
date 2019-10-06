@@ -2378,7 +2378,7 @@ html {
   font-family: 'AvenirNextCyr-Regular';
 }
 .header .header-slider {
-  display: none;
+  display: block;
 }
 
 .header .bot-header {
@@ -2485,27 +2485,47 @@ html {
   position: fixed;
 }
 
-.home-page .header-slider {
-  height: 870px;
+.header-slider {
+  height: 600px;
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-// .col-xs-12.col-sm-6.col-md-4.gallery_item {
-//   text-align: center;
-// }
 
-.home-page .header-slider video {
+.header-slider video {
   position: absolute;
   right: 0;
-  top: -100px;
+  //top: -100px;
+  top :0;
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   background-size: cover;
 }
+
+// .col-xs-12.col-sm-6.col-md-4.gallery_item {
+//   text-align: center;
+// }
+
+//.home-page .header-slider {
+//  height: 870px;
+//  display: block;
+//  position: relative;
+//  overflow: hidden;
+//}
+
+//.home-page .header-slider video {
+//  position: absolute;
+//  right: 0;
+//  top: -100px;
+//  min-width: 100%;
+//  min-height: 100%;
+//  width: auto;
+//  height: auto;
+//  background-size: cover;
+//}
 
 .home-page .top-header {
   // background: #fff;

@@ -36,9 +36,7 @@ class Home extends React.Component {
       	<header id="header">
           <div className="wrapper header">
             <Top />
-            {
-            // <Banner />
-            }
+            <Banner />
             <Menu />
           </div>
         </header>
