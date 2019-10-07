@@ -2,7 +2,8 @@ import React, { Fragment } from 'react';
 import Modal from './Modal';
 import ModalForm from './ModalForm';
 import Button from './Button';
-import Telegram from './TelegramBot'
+import Telegram from './TelegramBot';
+import SendMail from './SendMail';
 
 function strDate(date) {
   strDate = ('0' + date.getDate()).slice(-2) + '.' + ('0' + (date.getMonth() + 1)).slice(-2) + '.' + date.getFullYear() + ' ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
@@ -41,6 +42,10 @@ class Signup extends React.Component {
     var chatBotId = '160347291';  // Id бота
     var bot = new Telegram(chatGroupId);
     bot.sendMessage(`${data[0]}, телефон: ${data[1]}, разместил заявку на сайте ${strDate(date)} в салоне г. ${data[2]}`);
+
+    var sendmail = new SendMail;
+    //sendmail.sendMessage(data[0], data[1], strDate(date), data[2]);
+    sendmail.sendMessage();
 
     this.setState({ isOpen: false });
   }
