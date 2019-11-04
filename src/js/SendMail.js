@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-class SendMail {
+class SendNodemailer {
   constructor() {
 	var transporter = nodemailer.createTransport({
 	  type: "SMTP",
@@ -40,4 +40,4 @@ class SendMail {
   }
 };
 
-export default SendMail;
+export default SendNodemailer;
