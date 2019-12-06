@@ -1471,10 +1471,14 @@
 
 @media (max-width: 992px) {
   .header .bot-header {
-    height: 70px;
+    height: 10px;
   }
 }
-
+@media (max-width: 375px) {
+  .bot-header {
+    height: 10px;
+  }
+}
 @media (max-width: 1200px) {
   .header .bot-header .logo-block {
     margin-top: 20px;
@@ -1539,7 +1543,31 @@
     height: 500px;
   }
 }
-
+@media (max-width: 375px) {
+  .header-slider {
+    height: 212px;
+  }
+}
+@media (max-width: 768px) {
+  .header-slider {
+    height: 450px;
+  }
+}
+@media (min-width: 376px) and (max-width: 414px) {
+  .header-slider {
+    height: 235px;
+  }
+}
+@media (max-width: 320px) {
+  .header-slider {
+    height: 180px;
+  }
+}
+@media (min-width: 1300px) {
+  .header-slider {
+    height: 900px;
+  }
+}
 @media (max-width: 768px) {
   .home-page .header-slider {
     display: none;

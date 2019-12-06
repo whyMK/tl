@@ -16,7 +16,7 @@ class Contacts extends React.Component {
                   Томск
                 </div>
                 <div className="title-wrapper__footer">
-                  Как нас най
+                  Как нас найти
                 </div>
               </div>
             </div>
