@@ -6,7 +6,7 @@ class Banner extends React.Component {
   render () {
     return (
       <div className="header-slider">
-        <ReactPlayer url={videos} fileConfig={{ attributes: { "muted": "true", "autoPlay": "true", "playing":"true" } }} playing loop />
+        <ReactPlayer url={videos} fileConfig={{ attributes: { "muted": "true", "autoPlay": "true", "volume" : "0", "playing": "false"} }} playing loop />
       </div>
     )
   }
