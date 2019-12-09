@@ -22,9 +22,6 @@ const SideDrawer = props => {
           <li><a href="/abonements">Абонементы</a></li>
           <li><a href="/contacts">Контакты</a></li>
         </ul>
-        <div className="logo-block-cat">
-          <a href="/"><img src={logo2} alt="Cat" /></a>
-        </div>
       </nav>
     </Drawer>
   );
