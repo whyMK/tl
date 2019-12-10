@@ -1,6 +1,8 @@
+import emailjs from 'emailjs-com';
+
 class SendMail {
   constructor(fullname, phone, city) {
-    
+
     var date = new Date;
     var strDate = ('0' + date.getDate()).slice(-2) + '.' + ('0' + (date.getMonth() + 1)).slice(-2) + '.' + date.getFullYear() + ' ' + ('0' + date.getHours()).slice(-2) + ':' + ('0' + date.getMinutes()).slice(-2);
 
@@ -18,15 +20,16 @@ class SendMail {
          "message_html": htmlEmail
       }
 
-    this.service_id = "default_service";
+    this.service_id = "yandex_ru";
     this.template_id = "template_toplaser_order";
+    this.user_id = "user_gE0ZkeL1DfkgRMvMN5wA9";
 
   }
-  
+
 
   sendFeedback() {
     emailjs.send(
-    this.service_id, this.template_id, this.template_params
+    this.service_id, this.template_id, this.template_params, this.user_id
     ).then(res => {
         console.log('Email successfully sent!')
     })

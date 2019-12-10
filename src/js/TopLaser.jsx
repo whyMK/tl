@@ -3,7 +3,7 @@ import $ from "jquery"
 import PropTypes from 'prop-types'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Home from './Home'
+import Home from './Home.jsx'
 import Menu from './Menu'
 import Header from './Header'
 import Price from './Price'
